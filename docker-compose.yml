@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  
+  source:
+    build: .
+    image: signalserver:ready
+    container_name: signalserver
+    volumes:
+      - ./Signal-Server:/usr/src
